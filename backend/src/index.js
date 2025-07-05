@@ -5,7 +5,10 @@ import cors from "cors";
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://growth-pro-ai-assignment-xi.vercel.app", // Adjust this to your frontend URL
+  methods: ["GET", "POST"],
+}));
 app.use(express.json());
 
 // Headline templates with dynamic {name} and {location}

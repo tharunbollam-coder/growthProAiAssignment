@@ -1,6 +1,6 @@
 import { useBusinessStore } from "../store/businessStore";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://growthproaiassignment-tdou.onrender.com";
 
 export const fetchBusinessData = async (name, location) => {
   const setIsFetchingData = useBusinessStore.getState().setIsFetchingData;
